@@ -4,13 +4,15 @@
         <title>Minha página</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="https://fonts.googleapis.com/css?family=Courgette" rel="stylesheet">
         <link href="css/style.css" rel="stylesheet">
+        <script src="js/script.js"></script>
     </head>
-    <body>
-        <h1>Software Webteca</h1>
-
-        <div>
-            Olá, mundo!
+    <body id="body">
+        <h1 class="font-webteca">Webteca</h1>
+        <div class="busca-principal">
+            <input id="inputBusca" type="search" name="inptBuscaLivro" placeholder="Digite o nome do livro para buscar">
+            <button type="button" onclick="buscarLivro()">Buscar</button>
         </div>
     </body>
 </html>
