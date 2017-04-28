@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <title>Novo time | Clube do Esporte</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Courgette" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <script src="js/script.js"></script>
+</head>
+
+<body id="body">
+    <h1 class="font-webteca">Cadastro de time</h1>
+    <form class="form-novo-time">
+        <label for="inputNome">Nome do time:</label>
+        <input id="inputNome" type="text" name="nomeTime" placeholder="ex: Timão">
+        <label for="inputIdade">Idade do time:</label>
+        <input id="inputIdade" type="number" name="idadeTime" placeholder="ex: 105">
+        <label for="inputImagem">Imagem do time:</label>
+        <input id="inputImagem" type="text" name="imagemTime" placeholder="ex: http://google.com/logo.png">
+        <label for="inputTecnicoNome">Nome do técnico:</label>
+        <input id="inputTecnicoNome" type="text" name="tecnicoNomeTime" placeholder="ex: Jão da Silva">
+        <label for="inputTecnicoIdade">Idade do técnico:</label>
+        <input id="inputTecnicoIdade" type="number" name="tecnicoIdadeTime" placeholder="ex: 200">
+
+        <button type="button" onclick="salvarTime()">Salvar</button>
+    </form>
+    <script>
+        carregaTimes()
+
+    </script>
+</body>
+
+</html>

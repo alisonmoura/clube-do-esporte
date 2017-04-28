@@ -48,6 +48,13 @@ var times = [
 
 function carregaTimes() {
 
+    var cardTimes = document.getElementsByClassName("card-time");
+    var max = cardTimes.length;
+
+    for (var i = 0; i < max; i++) {
+        cardTimes[0].remove();
+    }
+
     for (var i = 0; i < times.length; i++) {
 
         var divCard = document.createElement("div");
@@ -132,4 +139,17 @@ function buscarTime() {
 
         document.getElementById("body").appendChild(divCard);
     }
+}
+
+function salvarTime() {
+    var time = { tecnico: {} };
+    time.nome = document.getElementById('inputNome').value;
+    time.idade = document.getElementById('inputIdade').value;
+    time.imagem = document.getElementById('inputImagem').value;
+    time.tecnico.nome = document.getElementById('inputTecnicoNome').value;
+    time.tecnico.idade = document.getElementById('inputTecnicoIdade').value;
+
+    times.push(time);
+
+    carregaTimes();
 }
